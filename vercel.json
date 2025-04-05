@@ -12,12 +12,6 @@
   "github": {
     "silent": true
   },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "regions": ["cdg1"],
   "installCommand": "npm install",
   "outputDirectory": ".next",

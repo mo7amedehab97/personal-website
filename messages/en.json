@@ -1,0 +1,123 @@
+{
+  "header": {
+    "story": "STORY",
+    "experience": "EXPERIENCE",
+    "workflow": "WORKFLOW",
+    "projects": "PROJECTS",
+    "skills": "SKILLS",
+    "specialSkills": "SPECIAL SKILLS",
+    "contacts": "CONTACTS"
+  },
+  "hero": {
+    "title1": "FRONT-END",
+    "title2": "DEVELOPER",
+    "quote": "\"Code is like humor. When you have to explain it, it's bad.\"",
+    "quoteAuthor": "- Cory House",
+    "greeting": "Hi there!",
+    "intro1": "My name is Mohamed and I'm an ambitious front-end developer with experience in React, Next.js, and TypeScript.",
+    "intro2": "My goal is to create efficient, scalable, and user-friendly web applications. I can quickly analyze problems and solve them both independently and in a team.",
+    "getInTouch": "Get in touch",
+    "learnMore": "Learn more",
+    "scrollDown": "Scroll down"
+  },
+  "story": {
+    "quote": "\"I'm writing my story so that others might see fragments of themselves.\"",
+    "title": "MY STORY",
+    "getResume": "Get my resume",
+    "paragraphs": [
+      "Hi there, my name is Mohamed Helles, and I'm a passionate Front-End Developer with experience in building modern web applications.",
+      "My journey in web development began at Gaza Sky Geeks Code Academy, where I completed an immersive Career Accelerator Program that ran five days a week, 8 hours a day for 8 months. This intensive bootcamp helped me build a solid foundation in web development with React.js and Node.js.",
+      "Since then, I've worked with companies like NadSoft, Scopal, and Suhool Investment, where I've developed and maintained various web applications using modern technologies like React, Next.js, and TypeScript.",
+      "I'm constantly learning and improving my skills. I've completed courses in React Native Development and React & TypeScript Architecture to stay up-to-date with the latest technologies and best practices.",
+      "I'm passionate about creating efficient, scalable, and user-friendly web applications that solve real-world problems."
+    ]
+  },
+  "experience": {
+    "title": "WORK EXPERIENCE"
+  },
+  "workflow": {
+    "title": "MY WORKFLOW",
+    "quote": "\"Code is like humor. When you have to explain it, it's bad.\"",
+    "quoteAuthor": "- Cory House",
+    "steps": [
+      { "number": "01", "title": "REQUIREMENTS ANALYSIS" },
+      { "number": "02", "title": "ASK ABOUT DEADLINES AND RESTRICTIONS" },
+      { "number": "03", "title": "SETTING UP THE ENVIRONMENT" },
+      { "number": "04", "title": "PROGRAMMING" },
+      { "number": "05", "title": "TESTING MY RESULTS" },
+      { "number": "06", "title": "SUPPORTING AND SCALING MY CODE" }
+    ]
+  },
+  "projects": {
+    "title": "MY PROJECTS",
+    "github": "Github",
+    "demo": "Demo",
+    "tech": "TECH"
+  },
+  "skills": {
+    "title": "MY SKILLS",
+    "additionalSkills": "ADDITIONAL SKILLS:"
+  },
+  "specialSkills": {
+    "title": "SPECIAL SKILLS",
+    "intro": "Explore this interactive 3D environment to discover my frontend development expertise.",
+    "introMobile": "Tap on different skill cubes to learn more about my capabilities.",
+    "introDesktop": "Click on different skill platforms to learn more about my capabilities.",
+    "loading": "Loading 3D Environment...",
+    "note": "This interactive 3D environment was built using Three.js and React Three Fiber, demonstrating my ability to create engaging web experiences with modern technologies.",
+    "help": "Help",
+    "tapToSee": "Tap on cubes to see skills",
+    "howToInteract": "How to Interact",
+    "instructions": [
+      "Click on any skill platform to navigate to it",
+      "Drag to rotate the camera view",
+      "Explore different skills to see my expertise",
+      "Watch the character move between skill platforms"
+    ],
+    "startExploring": "Start Exploring",
+    "fallbackNote": "Note: The interactive 3D environment couldn't be loaded. This fallback view shows my special skills in frontend development.",
+    "skills": {
+      "react": {
+        "name": "React",
+        "description": "Expert in React with 3+ years experience building complex applications"
+      },
+      "nextjs": {
+        "name": "Next.js",
+        "description": "Advanced Next.js development including SSR, SSG, and API routes"
+      },
+      "animation": {
+        "name": "Animation",
+        "description": "Creating fluid animations and transitions with Framer Motion"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "Strong typing and scalable architecture with TypeScript"
+      },
+      "3dweb": {
+        "name": "3D Web",
+        "description": "Building immersive 3D experiences with Three.js and React Three Fiber"
+      }
+    }
+  },
+  "education": {
+    "title": "EDUCATION & COURSES",
+    "education": "Education",
+    "courses": "Courses"
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "github": "Github",
+    "phone": "Phone",
+    "getResume": "Get my resume"
+  },
+  "footer": {
+    "copyright": "Mohamed Helles © {year} | Front-End Developer"
+  },
+  "language": {
+    "en": "English",
+    "ar": "Arabic"
+  }
+}
+

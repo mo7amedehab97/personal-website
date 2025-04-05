@@ -5,7 +5,24 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Mohamed Helles | Frontend Developer",
   description: "Personal portfolio of Mohamed Helles, Frontend Developer",
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      {
+        url: '/favicon.ico',
+        sizes: 'any',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: {
+      url: '/apple-touch-icon.png',
+      sizes: '180x180',
+    },
+  },
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({

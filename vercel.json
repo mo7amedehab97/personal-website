@@ -2,12 +2,6 @@
   "version": 2,
   "buildCommand": "npm run build",
   "framework": "nextjs",
-  "functions": {
-    "api/*.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
   "crons": [],
   "github": {
     "silent": true

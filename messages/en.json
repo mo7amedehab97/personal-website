@@ -25,11 +25,9 @@
     "title": "MY STORY",
     "getResume": "Get my resume",
     "paragraphs": [
-      "Hello, my name is Mohammad Hallas, and I'm a passionate frontend developer with a strong background in building modern web applications.",
-      "Before I found my path in tech, I worked in construction. My transition into web development began at Gaza Sky Geeks Code Academy, where I completed their Career Accelerator Program — a rigorous, full-time training that ran five days a week, eight hours a day, for eight months. This experience laid a solid foundation in technologies like React.js and Node.js.",
-      "Since then, I've had the opportunity to work with companies such as NadSoft, Scopal, and Suhool Investment, contributing to a variety of projects and maintaining web applications using modern stacks like React, Next.js, and TypeScript.",
-      "I'm committed to continuous learning and growth. I've completed advanced courses in React Native and in React & TypeScript engineering to stay aligned with the latest industry standards and best practices.",
-      "What fuels my work is the drive to create scalable, efficient, and user-friendly web applications that solve real-world problems. Living in Gaza, I continue to survive under the ongoing genocide, yet I remain dedicated to my craft and to using technology as a force for resilience and change."
+      "Hi, I'm Mohamed — a passionate Frontend Developer with hands-on experience in React, Next.js, and TypeScript.",
+      "I specialize in building efficient, scalable, and user-friendly web applications.",
+      "I'm a quick problem-solver who thrives both independently and within collaborative teams, always aiming to deliver high-quality solutions."
     ]
   },
   "experience": {

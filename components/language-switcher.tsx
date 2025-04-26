@@ -36,7 +36,7 @@ export function LanguageSwitcher() {
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button variant="outline" size="sm" onClick={toggleLanguage} className="flex items-center gap-1">
         <Globe size={14} />
-        <span>{language === "en" ? t("ar") : t("en")}</span>
+        <span>{language === "en" ? "AR" : "EN"}</span>
       </Button>
     </motion.div>
   )

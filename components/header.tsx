@@ -96,9 +96,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           {/* Language Switcher */}
-          <div className="hidden md:block">
-            <LanguageSwitcher />
-          </div>
+          
 
           {/* Mobile menu button */}
           <motion.button className="md:hidden" onClick={toggleMenu} whileTap={{ scale: 0.95 }}>
@@ -106,13 +104,13 @@ export function Header() {
           </motion.button>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-8 flipped:space-x-reverse">
+          <nav className="hidden md:flex gap-4">
             {navItems.map((item, index) => (
               <motion.a
                 key={item.name}
                 href={`#${item.href}`}
                 className={cn(
-                  "font-sans text-xs tracking-wider transition-colors relative mx-2",
+                  "font-sans text-xs tracking-wider transition-colors relative ",
                   activeSection === item.href ? "text-accent" : "text-primary-foreground hover:text-accent",
                   direction === "rtl" && "font-arabic text-sm",
                 )}
@@ -125,11 +123,14 @@ export function Header() {
               >
                 {item.name}
                 {activeSection === item.href && (
-                  <motion.span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent" layoutId="activeSection" />
+                  <motion.span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent px-2" layoutId="activeSection" />
                 )}
               </motion.a>
             ))}
           </nav>
+          <div className="hidden md:block">
+            <LanguageSwitcher />
+          </div>
         </div>
 
         {/* Mobile navigation */}

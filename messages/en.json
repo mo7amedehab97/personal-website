@@ -101,18 +101,52 @@
     "github": "Github",
     "demo": "Demo",
     "tech": "TECH",
+    "showMore": "Show More",
+    "showLess": "Show Less",
     "projects": {
       "job360": {
         "title": "Job360",
-        "description": "An interview simulation platform designed to help job candidates improve their skills by practicing predefined interview questions. Users can record answers and receive feedback."
+        "description": "An interview simulation platform helping job candidates improve their skills through practice interviews and AI-powered feedback."
       },
       "scopal": {
         "title": "Scopal Media Platform",
-        "description": "A media platform focused on selling news, media, and gossip content. Features include voice search using Speech API with AI, authentication using nextAuth and JWT, and custom audio and video players."
+        "description": "A modern media platform featuring voice search, custom media players, and secure authentication for news and entertainment content."
+      },
+      "sorati": {
+        "title": "Sorati",
+        "description": "A social platform that helps you capture and preserve your happy moments by creating digital photo walls, allowing you to relive and share your cherished memories."
       },
       "powerlook": {
         "title": "PowerLook CMS",
-        "description": "A CMS for managing E-commerce applications with access control features and booking time schedules. Includes a comprehensive real-time chat system using Express.js, Next.js, and Socket.io."
+        "description": "A comprehensive CMS for e-commerce with real-time chat, booking system, and access control features."
+      },
+      "zahran": {
+        "title": "Zahran",
+        "description": "A dynamic web application with real-time features and modern UI components for enhanced user experience."
+      },
+      "qahttan": {
+        "title": "Qahttan",
+        "description": "A responsive web platform built with React, featuring form validation and smooth animations."
+      },
+      "amjad": {
+        "title": "Amjad Ghanima Portfolio",
+        "description": "A professional portfolio website showcasing creative work with modern design and smooth transitions."
+      },
+      "buildcon": {
+        "title": "Buildcon",
+        "description": "A landing page for a construction company featuring modern design and responsive layout."
+      },
+      "metaverse": {
+        "title": "Metaverse",
+        "description": "A Web3 landing page showcasing the future of digital interaction and virtual spaces."
+      },
+      "gorco": {
+        "title": "Gorco Fruit Shop",
+        "description": "An e-commerce website for a fruit shop with clean design and user-friendly interface."
+      },
+      "aidex": {
+        "title": "Aidex Japan",
+        "description": "A tourism website featuring Japanese destinations with interactive elements and modern design."
       }
     }
   },

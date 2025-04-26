@@ -25,15 +25,63 @@
     "title": "MY STORY",
     "getResume": "Get my resume",
     "paragraphs": [
-      "Hi there, my name is Mohamed Helles, and I'm a passionate Front-End Developer with experience in building modern web applications.",
-      "My journey in web development began at Gaza Sky Geeks Code Academy, where I completed an immersive Career Accelerator Program that ran five days a week, 8 hours a day for 8 months. This intensive bootcamp helped me build a solid foundation in web development with React.js and Node.js.",
-      "Since then, I've worked with companies like NadSoft, Scopal, and Suhool Investment, where I've developed and maintained various web applications using modern technologies like React, Next.js, and TypeScript.",
-      "I'm constantly learning and improving my skills. I've completed courses in React Native Development and React & TypeScript Architecture to stay up-to-date with the latest technologies and best practices.",
-      "I'm passionate about creating efficient, scalable, and user-friendly web applications that solve real-world problems."
+      "Hello, my name is Mohammad Hallas, and I'm a passionate frontend developer with a strong background in building modern web applications.",
+      "Before I found my path in tech, I worked in construction. My transition into web development began at Gaza Sky Geeks Code Academy, where I completed their Career Accelerator Program — a rigorous, full-time training that ran five days a week, eight hours a day, for eight months. This experience laid a solid foundation in technologies like React.js and Node.js.",
+      "Since then, I've had the opportunity to work with companies such as NadSoft, Scopal, and Suhool Investment, contributing to a variety of projects and maintaining web applications using modern stacks like React, Next.js, and TypeScript.",
+      "I'm committed to continuous learning and growth. I've completed advanced courses in React Native and in React & TypeScript engineering to stay aligned with the latest industry standards and best practices.",
+      "What fuels my work is the drive to create scalable, efficient, and user-friendly web applications that solve real-world problems. Living in Gaza, I continue to survive under the ongoing genocide, yet I remain dedicated to my craft and to using technology as a force for resilience and change."
     ]
   },
   "experience": {
-    "title": "WORK EXPERIENCE"
+    "title": "WORK EXPERIENCE",
+    "experiences": [
+      {
+        "id": 1,
+        "role": "React Developer",
+        "company": "NadSoft",
+        "period": "Jan 2023 - Present",
+        "location": "Remote - Jordan",
+        "description": [
+          "Maintained and enhanced the Job360 application, an interview simulation platform designed to help job candidates improve their skills by practicing predefined interview questions.",
+          "Developed and implemented the \"My Profile\" section for mentors, allowing personal details and administrative notes to be managed.",
+          "Utilized React.js with React Hook Form for data collection, Zod for validation, Framer Motion for animation, and Socket.io for real-time chat.",
+          "Contributed to system improvements by enabling organizations to manage user registrations, access, and usage.",
+          "Worked on expanding Job360 functionality by designing an AI Analysis Component for detailed feedback on recorded answers and a Self-Registration Feature allowing independent user sign-ups."
+        ]
+      },
+      {
+        "id": 2,
+        "role": "Front End Developer",
+        "company": "Scopal",
+        "period": "Dec 2023 - Jan 2025",
+        "location": "Freelance Project - London, UK",
+        "description": [
+          "Developed and maintained a media platform focused on selling news, media, and gossip content using Next 14 with TypeScript.",
+          "Implemented a voice search feature over all the website using the Speech API with AI.",
+          "Created END TO END Testing using Cypress and TypeScript.",
+          "Implemented authentication and authorization using nextAuth and JWT, integrating pre-existing API servers.",
+          "Achieved responsive and modern UI using Tailwind and Shadcn UI.",
+          "Used React Query for efficient data fetching and state management.",
+          "Applied SSR, SSG, and CSR techniques for optimal performance and SEO.",
+          "Created custom audio and video players to enhance the media consumption experience on the platform.",
+          "Utilized React Hook Form and Zod for robust form management and data validation."
+        ]
+      },
+      {
+        "id": 3,
+        "role": "Front End Developer",
+        "company": "Suhool Investment",
+        "period": "Oct 2022 - Dec 2022",
+        "location": "Remote - Saudi Arabia",
+        "description": [
+          "Worked on \"PowerLook\", a CMS for managing E-commerce applications.",
+          "Developed access control features and booking time schedules using Full Calendar.",
+          "Developed a comprehensive real-time chat system using Express.js, Next.js, and Socket.io.",
+          "Suhool is a diversified industrial conglomerate in Saudi Arabia, involved in sectors such as recruitment of workers, oil and gas, manufacturing, and real estate.",
+          "Diligently investigated and resolved project bugs to ensure optimal performance and user experience."
+        ]
+      }
+    ]
   },
   "workflow": {
     "title": "MY WORKFLOW",
@@ -52,7 +100,21 @@
     "title": "MY PROJECTS",
     "github": "Github",
     "demo": "Demo",
-    "tech": "TECH"
+    "tech": "TECH",
+    "projects": {
+      "job360": {
+        "title": "Job360",
+        "description": "An interview simulation platform designed to help job candidates improve their skills by practicing predefined interview questions. Users can record answers and receive feedback."
+      },
+      "scopal": {
+        "title": "Scopal Media Platform",
+        "description": "A media platform focused on selling news, media, and gossip content. Features include voice search using Speech API with AI, authentication using nextAuth and JWT, and custom audio and video players."
+      },
+      "powerlook": {
+        "title": "PowerLook CMS",
+        "description": "A CMS for managing E-commerce applications with access control features and booking time schedules. Includes a comprehensive real-time chat system using Express.js, Next.js, and Socket.io."
+      }
+    }
   },
   "skills": {
     "title": "MY SKILLS",
@@ -102,7 +164,44 @@
   "education": {
     "title": "EDUCATION & COURSES",
     "education": "Education",
-    "courses": "Courses"
+    "courses": "Courses",
+    "gazaSkyGeeks": {
+      "title": "Gaza Sky Geeks, Code Academy",
+      "period": "Jan 2022 - May 2022",
+      "description": "Career Accelerator Program",
+      "details": [
+        "The Career Accelerator is an immersive, web development Bootcamp running five days a week, 8 hours a day for 8 months, focusing on building a solid foundation in web development with the tools React.js and Node.js.",
+        "Engaging in weekly interactive workshops and coding challenges, doing research, testing, code reviews, and presentation.",
+        "Building multiple projects, individually, in pairs, or as a team.",
+        "Working in \"Agile\" methodology."
+      ]
+    },
+    "reactNative": {
+      "title": "Zero To Mastery, React Native Development",
+      "period": "Nov 2023 - Mar 2024",
+      "details": [
+        "Mastered the latest features in React Native including Hooks, Context API, AsyncStorage, Animation, and more.",
+        "Set up authentication and user accounts using Firebase and Firebase Functions.",
+        "Integrated Google Maps API and added interactive maps to projects.",
+        "Built reactive, performant, large-scale applications like a Senior Mobile App Developer.",
+        "Implemented Stripe Payments (online payments) in mobile apps.",
+        "Used React Navigation for routing and utilized native phone capabilities like Camera and Vibration.",
+        "Applied Styled-Components and native styling to create beautiful, modern apps."
+      ]
+    },
+    "reactTypescript": {
+      "title": "Frontend Masters, React & TypeScript Architecture",
+      "period": "Aug 2023 - Oct 2023",
+      "details": [
+        "Learned advanced architecture patterns and best practices for scalable React applications.",
+        "Mastered the use of TypeScript for type safety and clean, maintainable code.",
+        "Designed reusable and modular components with TypeScript.",
+        "Gained deep understanding of state management, context, and custom hooks.",
+        "Implemented efficient data fetching and API integration.",
+        "Ensured application robustness with strong type definitions and interfaces.",
+        "Improved project structure and code quality through advanced TypeScript features."
+      ]
+    }
   },
   "contact": {
     "title": "CONTACTS",

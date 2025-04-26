@@ -9,7 +9,7 @@ import { Globe } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function LanguageSwitcher() {
-  const { language } = useLanguage()
+  const { language, setLanguage } = useLanguage()
   const router = useRouter()
   const pathname = usePathname()
   const t = useTranslations("language")
@@ -21,6 +21,9 @@ export function LanguageSwitcher() {
 
   const toggleLanguage = () => {
     const newLocale = language === "en" ? "ar" : "en"
+    // Update the language in context
+    setLanguage(newLocale)
+    // Update the URL
     const newPath = pathname.replace(/^\/(en|ar)/, `/${newLocale}`)
     router.push(newPath)
   }

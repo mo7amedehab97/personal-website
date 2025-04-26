@@ -45,7 +45,7 @@ export function SpecialSkills() {
   ]
 
   return (
-    <section id="special-skills" className="py-12 md:py-20 bg-secondary">
+    <section id="special-skills" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <AnimateInView animation="fadeIn">
           <h2 className={cn("section-title text-center mb-8", direction === "rtl" && "font-arabic")}>{t("title")}</h2>

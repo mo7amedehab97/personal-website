@@ -3,13 +3,15 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { scrollToSection } from "@/lib/smooth-scroll"
 import { useTranslations } from "next-intl"
 import { useLanguage } from "@/lib/language-context"
 import { LanguageSwitcher } from "./language-switcher"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   const t = useTranslations("header")
@@ -58,6 +60,8 @@ export function Header() {
     setIsMenuOpen(false)
   }
 
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
   return (
     <motion.header
       className={`sticky top-0 z-50 border-b border-secondary transition-all duration-300 ${scrolled ? "bg-primary/95 backdrop-blur-sm" : "bg-primary"
@@ -67,18 +71,26 @@ export function Header() {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="flex items-center gap-2">
+         
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault()
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
-            className={cn("font-heading text-2xl font-medium", direction === "rtl" && "font-arabic")}
+            className={cn("font-heading text-2xl font-medium flex items-center gap-2", direction === "rtl" && "font-arabic")}
           >
+            <Image
+            src="/icon.svg"
+            alt="MH Logo"
+            width={32}
+            height={32}
+            className="rounded-full"
+          />
             MOHAMED
-            <br />
             HELLES
+        
           </a>
         </motion.div>
 
@@ -89,7 +101,7 @@ export function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <motion.button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} whileTap={{ scale: 0.95 }}>
+          <motion.button className="md:hidden" onClick={toggleMenu} whileTap={{ scale: 0.95 }}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </motion.button>
 
@@ -121,32 +133,39 @@ export function Header() {
         </div>
 
         {/* Mobile navigation */}
-        {isMenuOpen && (
-          <motion.div className="absolute top-full left-0 right-0 bg-primary border-b border-secondary md:hidden">
-            <nav className="flex flex-col p-4">
-              {navItems.map((item, index) => (
-                <motion.a
-                  key={item.name}
-                  href={`#${item.href}`}
-                  className={cn(
-                    "py-2 font-sans text-sm tracking-wider mb-2",
-                    activeSection === item.href ? "text-accent" : "text-primary-foreground hover:text-accent",
-                    direction === "rtl" && "font-arabic",
-                  )}
-                  onClick={(e) => handleNavClick(item.href, e)}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.05 * index }}
-                >
-                  {item.name}
-                </motion.a>
-              ))}
-              <div className="mt-4">
-                <LanguageSwitcher />
-              </div>
-            </nav>
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="absolute top-full left-0 right-0 bg-primary border-b border-secondary md:hidden"
+            >
+              <nav className="flex flex-col p-4">
+                {navItems.map((item, index) => (
+                  <motion.a
+                    key={item.name}
+                    href={`#${item.href}`}
+                    className={cn(
+                      "py-2 font-sans text-sm tracking-wider mb-2",
+                      activeSection === item.href ? "text-accent" : "text-primary-foreground hover:text-accent",
+                      direction === "rtl" && "font-arabic",
+                    )}
+                    onClick={(e) => handleNavClick(item.href, e)}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: 0.05 * index }}
+                  >
+                    {item.name}
+                  </motion.a>
+                ))}
+                <div className="mt-4">
+                  <LanguageSwitcher />
+                </div>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.header>
   )

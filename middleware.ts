@@ -8,8 +8,8 @@ export default createMiddleware({
   // If this locale is matched, pathnames work without a prefix (e.g. `/about`)
   defaultLocale,
 
-  // Automatically redirect to user's preferred locale
-  localeDetection: true,
+  // Disable automatic locale detection to ensure manual switching works
+  localeDetection: false
 })
 
 export const config = {

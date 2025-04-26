@@ -39,7 +39,7 @@ export function SpecialSkills() {
     {
       title: t("skills.nextjs.name"),
       description: t("skills.nextjs.description"),
-      color: "#000000",
+      color: "#edb820",
       icon: "N",
     },
   ]

@@ -48,7 +48,6 @@ export default function Home() {
         <Hero />
         <Story />
         <Experience />
-        <Workflow />
         <Projects />
         <Skills />
         <SpecialSkills />

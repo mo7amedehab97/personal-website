@@ -132,7 +132,7 @@ export function Projects() {
           {visibleProjects.map((project, index) => (
             <AnimateInView key={project.id} animation="slideUp" delay={0.1 * index}>
               <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                <Card className="bg-secondary border-secondary flex flex-col overflow-hidden h-[450px] hover:cursor-pointer">
+                <Card className="bg-secondary border-secondary flex flex-col overflow-hidden h-[500px] hover:cursor-pointer">
                   <CardHeader className="pb-2">
                     <motion.div
                       className="relative w-full h-48 mb-4 overflow-hidden rounded-md"

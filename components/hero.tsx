@@ -1,24 +1,27 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { scrollToSection } from "@/lib/smooth-scroll"
-import { Github, Linkedin } from "lucide-react"
-import { useTranslations } from "next-intl"
-import { useLanguage } from "@/lib/language-context"
-import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { scrollToSection } from "@/lib/smooth-scroll";
+import { Github, Linkedin } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useLanguage } from "@/lib/language-context";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
-  const t = useTranslations("hero")
-  const { direction } = useLanguage()
+  const t = useTranslations("hero");
+  const { direction } = useLanguage();
 
   return (
     <section className="py-12 md:py-20 lg:py-28 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
-            className={cn("order-2 md:order-1", direction === "rtl" && "md:order-2")}
+            className={cn(
+              "order-2 md:order-1",
+              direction === "rtl" && "md:order-2"
+            )}
             initial={{ opacity: 0, x: direction === "rtl" ? 50 : -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -26,7 +29,7 @@ export function Hero() {
             <motion.h1
               className={cn(
                 "font-heading text-4xl md:text-5xl lg:text-7xl font-medium mb-4",
-                direction === "rtl" && "font-arabic",
+                direction === "rtl" && "font-arabic"
               )}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,7 +59,12 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              <blockquote className={cn("italic text-muted-foreground", direction === "rtl" && "font-arabic")}>
+              <blockquote
+                className={cn(
+                  "italic text-muted-foreground",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
                 {t("quote")}
                 <cite className="block mt-2">{t("quoteAuthor")}</cite>
               </blockquote>
@@ -68,9 +76,30 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
-              <h2 className={cn("text-xl md:text-2xl mb-4", direction === "rtl" && "font-arabic")}>{t("greeting")}</h2>
-              <p className={cn("body-text mb-4", direction === "rtl" && "font-arabic")}>{t("intro1")}</p>
-              <p className={cn("body-text", direction === "rtl" && "font-arabic")}>{t("intro2")}</p>
+              <h2
+                className={cn(
+                  "text-xl md:text-2xl mb-4",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
+                {t("greeting")}
+              </h2>
+              <p
+                className={cn(
+                  "body-text mb-4",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
+                {t("intro1")}
+              </p>
+              <p
+                className={cn(
+                  "body-text",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
+                {t("intro2")}
+              </p>
             </motion.div>
 
             <motion.div
@@ -83,14 +112,18 @@ export function Hero() {
                 className="bg-accent text-primary hover:bg-accent/80 transition-all duration-300 transform hover:scale-105"
                 onClick={() => scrollToSection("contacts")}
               >
-                <span className={cn(direction === "rtl" && "font-arabic")}>{t("getInTouch")}</span>
+                <span className={cn(direction === "rtl" && "font-arabic")}>
+                  {t("getInTouch")}
+                </span>
               </Button>
               <Button
                 variant="outline"
                 className="transition-all duration-300 transform hover:scale-105"
                 onClick={() => scrollToSection("story")}
               >
-                <span className={cn(direction === "rtl" && "font-arabic")}>{t("learnMore")}</span>
+                <span className={cn(direction === "rtl" && "font-arabic")}>
+                  {t("learnMore")}
+                </span>
               </Button>
               <div className="flex gap-2 ml-2 flipped:mr-2 flipped:ml-0">
                 <motion.a
@@ -118,17 +151,20 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className={cn("order-1 md:order-2 flex justify-center", direction === "rtl" && "md:order-1")}
+            className={cn(
+              "order-1 md:order-2 flex justify-center",
+              direction === "rtl" && "md:order-1"
+            )}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <Image
-                src="/images/mohamed-profile.png"
+                src="/images/mohamed_personal.png"
                 alt="Mohamed Helles"
                 fill
-                className="object-cover rounded-full"
+                className="object-cover rounded-full w-"
                 priority
               />
               <motion.div
@@ -159,16 +195,27 @@ export function Hero() {
           className="w-6 h-10 border-2 border-accent rounded-full flex justify-center p-1"
           initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
+          transition={{
+            duration: 1,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+          }}
         >
           <motion.div
             className="w-1 h-2 bg-accent rounded-full"
             animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+            transition={{
+              duration: 1.5,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
           />
         </motion.div>
         <motion.p
-          className={cn("text-xs text-muted-foreground mt-2", direction === "rtl" && "font-arabic")}
+          className={cn(
+            "text-xs text-muted-foreground mt-2",
+            direction === "rtl" && "font-arabic"
+          )}
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
         >
@@ -176,6 +223,5 @@ export function Hero() {
         </motion.p>
       </motion.div>
     </section>
-  )
+  );
 }
-

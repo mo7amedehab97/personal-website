@@ -6,18 +6,19 @@
     "projects": "PROJECTS",
     "skills": "SKILLS",
     "specialSkills": "SPECIAL SKILLS",
-    "contacts": "CONTACTS"
+    "contacts": "CONTACTS",
+    "education": "EDUCATION"
   },
   "hero": {
     "title1": "FRONT-END",
     "title2": "DEVELOPER",
     "quote": "\"Code is like humor. When you have to explain it, it's bad.\"",
     "quoteAuthor": "- Cory House",
-    "greeting": "Hi, I’m Mohamed 👋",
-    "intro1": "I’m a self-taught Front-End Developer with a love for clean code, thoughtful design, and building things that make people’s lives easier. My journey into web development wasn’t typical — I started out in construction, but my curiosity and passion for technology led me to a whole new world.",
+    "greeting": "Hi, I'm Mohamed 👋",
+    "intro1": "I'm a self-taught Front-End Developer with a love for clean code, thoughtful design, and building things that make people's lives easier. My journey into web development wasn't typical — I started out in construction, but my curiosity and passion for technology led me to a whole new world.",
     "intro2": "Today, I work with tools like React, Next.js, and TypeScript to craft web experiences that are fast, accessible, and scalable. I love solving problems, digging deep into challenges, and turning ideas into functional, elegant solutions.",
     "intro3": "What drives me most is the impact I can make — not just through code, but by helping teammates, learning something new every day, and sharing what I know.",
-    "intro4": "Thanks for stopping by. Let’s build something meaningful together 🚀",
+    "intro4": "Thanks for stopping by. Let's build something meaningful together 🚀",
     "getInTouch": "Get in touch",
     "learnMore": "Learn more",
     "scrollDown": "Scroll down"

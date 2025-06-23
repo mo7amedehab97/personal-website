@@ -21,12 +21,11 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
-    { name: t("story"), href: "story" },
-    { name: t("experience"), href: "experience" },
-    { name: t("workflow"), href: "workflow" },
-    { name: t("projects"), href: "projects" },
     { name: t("skills"), href: "skills" },
+    { name: t("projects"), href: "projects" },
+    { name: t("experience"), href: "experience" },
     { name: t("specialSkills"), href: "special-skills" },
+    { name: t("education"), href: "education" },
     { name: t("contacts"), href: "contacts" },
   ];
 

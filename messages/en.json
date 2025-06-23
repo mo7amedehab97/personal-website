@@ -13,9 +13,11 @@
     "title2": "DEVELOPER",
     "quote": "\"Code is like humor. When you have to explain it, it's bad.\"",
     "quoteAuthor": "- Cory House",
-    "greeting": "Hi there!",
-    "intro1": "My name is Mohamed and I'm an ambitious front-end developer with experience in React, Next.js, and TypeScript.",
-    "intro2": "My goal is to create efficient, scalable, and user-friendly web applications. I can quickly analyze problems and solve them both independently and in a team.",
+    "greeting": "Hi, I’m Mohamed 👋",
+    "intro1": "I’m a self-taught Front-End Developer with a love for clean code, thoughtful design, and building things that make people’s lives easier. My journey into web development wasn’t typical — I started out in construction, but my curiosity and passion for technology led me to a whole new world.",
+    "intro2": "Today, I work with tools like React, Next.js, and TypeScript to craft web experiences that are fast, accessible, and scalable. I love solving problems, digging deep into challenges, and turning ideas into functional, elegant solutions.",
+    "intro3": "What drives me most is the impact I can make — not just through code, but by helping teammates, learning something new every day, and sharing what I know.",
+    "intro4": "Thanks for stopping by. Let’s build something meaningful together 🚀",
     "getInTouch": "Get in touch",
     "learnMore": "Learn more",
     "scrollDown": "Scroll down"
@@ -35,7 +37,7 @@
     "experiences": [
       {
         "id": 1,
-        "role": "React Developer",
+        "role": "Front-End Developer",
         "company": "NadSoft",
         "period": "Jan 2023 - Present",
         "location": "Remote - Jordan",
@@ -86,12 +88,30 @@
     "quote": "\"Code is like humor. When you have to explain it, it's bad.\"",
     "quoteAuthor": "- Cory House",
     "steps": [
-      { "number": "01", "title": "REQUIREMENTS ANALYSIS" },
-      { "number": "02", "title": "ASK ABOUT DEADLINES AND RESTRICTIONS" },
-      { "number": "03", "title": "SETTING UP THE ENVIRONMENT" },
-      { "number": "04", "title": "PROGRAMMING" },
-      { "number": "05", "title": "TESTING MY RESULTS" },
-      { "number": "06", "title": "SUPPORTING AND SCALING MY CODE" }
+      {
+        "number": "01",
+        "title": "REQUIREMENTS ANALYSIS"
+      },
+      {
+        "number": "02",
+        "title": "ASK ABOUT DEADLINES AND RESTRICTIONS"
+      },
+      {
+        "number": "03",
+        "title": "SETTING UP THE ENVIRONMENT"
+      },
+      {
+        "number": "04",
+        "title": "PROGRAMMING"
+      },
+      {
+        "number": "05",
+        "title": "TESTING MY RESULTS"
+      },
+      {
+        "number": "06",
+        "title": "SUPPORTING AND SCALING MY CODE"
+      }
     ]
   },
   "projects": {
@@ -251,4 +271,3 @@
     "ar": "Arabic"
   }
 }
-

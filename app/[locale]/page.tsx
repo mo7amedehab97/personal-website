@@ -46,10 +46,9 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Story />
-        <Experience />
-        <Projects />
         <Skills />
+        <Projects />
+        <Experience />
         <SpecialSkills />
         <Education />
         <Contact />

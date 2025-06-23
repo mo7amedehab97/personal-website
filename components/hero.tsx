@@ -14,7 +14,7 @@ export function Hero() {
   const { direction } = useLanguage();
 
   return (
-    <section className="py-12 md:py-20 lg:py-28 relative overflow-hidden">
+    <section className="py-8 md:py-12 lg:py-28 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
@@ -22,8 +22,8 @@ export function Hero() {
               "order-2 md:order-1",
               direction === "rtl" && "md:order-2"
             )}
-            initial={{ opacity: 0, x: direction === "rtl" ? 50 : -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <motion.h1
@@ -31,22 +31,22 @@ export function Hero() {
                 "font-heading text-4xl md:text-5xl lg:text-7xl font-medium mb-4",
                 direction === "rtl" && "font-arabic"
               )}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <motion.span
                 className="block"
-                initial={{ opacity: 0, x: direction === "rtl" ? 20 : -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 {t("title1")}
               </motion.span>
               <motion.span
                 className="block"
-                initial={{ opacity: 0, x: direction === "rtl" ? 20 : -20 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
                 {t("title2")}
@@ -55,8 +55,8 @@ export function Hero() {
 
             <motion.div
               className="mb-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
               <blockquote
@@ -72,8 +72,8 @@ export function Hero() {
 
             <motion.div
               className="mb-8"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             >
               <h2
@@ -100,11 +100,27 @@ export function Hero() {
               >
                 {t("intro2")}
               </p>
+              <p
+                className={cn(
+                  "body-text",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
+                {t("intro3")}
+              </p>
+              <p
+                className={cn(
+                  "body-text",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
+                {t("intro4")}
+              </p>
             </motion.div>
 
             <motion.div
               className="flex flex-wrap gap-4"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
@@ -155,8 +171,8 @@ export function Hero() {
               "order-1 md:order-2 flex justify-center",
               direction === "rtl" && "md:order-1"
             )}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
@@ -169,14 +185,14 @@ export function Hero() {
               />
               <motion.div
                 className="absolute inset-0 rounded-full border-2 border-accent"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
               />
               <motion.div
                 className="absolute -inset-2 rounded-full border border-accent/30"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.7 }}
               />
             </div>
@@ -186,15 +202,15 @@ export function Hero() {
 
       {/* Animated scroll indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-        initial={{ opacity: 0, y: -10 }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center hidden sm:flex"
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.2 }}
       >
         <motion.div
           className="w-6 h-10 border-2 border-accent rounded-full flex justify-center p-1"
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0.5, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 1,
             repeat: Number.POSITIVE_INFINITY,

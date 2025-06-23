@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function PageLoader() {
-  const [loading, setLoading] = useState(true)
-  const [isMounted, setIsMounted] = useState(false)
+  const [loading, setLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true)
+    setIsMounted(true);
     // Simulate loading time
     const timer = setTimeout(() => {
-      setLoading(false)
-    }, 1500)
+      setLoading(false);
+    }, 1500);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!isMounted) {
-    return null
+    return null;
   }
 
   return (
@@ -26,13 +26,13 @@ export function PageLoader() {
       {loading && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center bg-primary"
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 1, y: -20 }}
+          exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
         >
           <motion.div
             className="flex flex-col items-center"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
@@ -55,6 +55,5 @@ export function PageLoader() {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
-

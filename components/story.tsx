@@ -24,7 +24,7 @@ export function Story() {
           </AnimateInView>
 
           <div className="space-y-4 body-text">
-            {t.raw("paragraphs").map((paragraph, index) => (
+            {t.raw("paragraphs").map((paragraph: string, index: number) => (
               <AnimateInView key={index} animation="slideUp" delay={0.1 * index}>
                 <p className={cn(direction === "rtl" && "font-arabic")}>{paragraph}</p>
               </AnimateInView>

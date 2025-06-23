@@ -1,13 +1,13 @@
-"use client"
-import { AnimateInView } from "./animate-in-view"
-import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
-import { useLanguage } from "@/lib/language-context"
-import { cn } from "@/lib/utils"
+"use client";
+import { AnimateInView } from "./animate-in-view";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { useLanguage } from "@/lib/language-context";
+import { cn } from "@/lib/utils";
 
 export function Skills() {
-  const t = useTranslations("skills")
-  const { direction } = useLanguage()
+  const t = useTranslations("skills");
+  const { direction } = useLanguage();
 
   const skills = [
     { name: "REACT JS", icon: "⚛️" },
@@ -22,7 +22,7 @@ export function Skills() {
     { name: "REACT NATIVE", icon: "📱" },
     { name: "MONGODB", icon: "🍃" },
     { name: "POSTGRES", icon: "🐘" },
-  ]
+  ];
 
   const additionalSkills = [
     "BOOTSTRAP",
@@ -43,21 +43,30 @@ export function Skills() {
     "HEROKU",
     "NETLIFY",
     "RENDER",
-  ]
+  ];
 
   return (
     <section id="skills" className="py-12 md:py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <AnimateInView animation="fadeIn">
-            <h2 className={cn("section-title text-center mb-12", direction === "rtl" && "font-arabic")}>
+            <h2
+              className={cn(
+                "section-title text-center mb-12",
+                direction === "rtl" && "font-arabic"
+              )}
+            >
               {t("title")}
             </h2>
           </AnimateInView>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
             {skills.map((skill, index) => (
-              <AnimateInView key={skill.name} animation="scale" delay={0.05 * index}>
+              <AnimateInView
+                key={skill.name}
+                animation="scale"
+                delay={0.05 * index}
+              >
                 <motion.div
                   className="flex items-center p-3 bg-primary rounded-md"
                   whileHover={{
@@ -79,9 +88,14 @@ export function Skills() {
             ))}
           </div>
 
-          <AnimateInView animation="fadeIn" delay={0.3}>
+          <AnimateInView delay={0.3}>
             <div>
-              <h3 className={cn("text-center text-sm mb-4", direction === "rtl" && "font-arabic")}>
+              <h3
+                className={cn(
+                  "text-center text-sm mb-4",
+                  direction === "rtl" && "font-arabic"
+                )}
+              >
                 {t("additionalSkills")}
               </h3>
               <div className="flex flex-wrap justify-center gap-2">
@@ -89,7 +103,7 @@ export function Skills() {
                   <motion.span
                     key={skill}
                     className="px-3 py-1 bg-primary rounded-md text-xs"
-                    initial={{ opacity: 0, y: 10 }}
+                    initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.5 + 0.05 * index }}
                     whileHover={{
@@ -107,6 +121,5 @@ export function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

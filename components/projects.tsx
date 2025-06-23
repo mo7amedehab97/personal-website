@@ -1,43 +1,50 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, ExternalLink } from "lucide-react"
-import { AnimateInView } from "./animate-in-view"
-import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
-import { useLanguage } from "@/lib/language-context"
-import { cn } from "@/lib/utils"
-import scobal from "../public/images/scobal.png"
-import job360 from "../public/images/job360.png"
-import zahran from "../public/images/zahran.png"
-import qahttan from "../public/images/qahttan.png"
-import amjad from "../public/images/amjad.png"
-import buildcon from "../public/images/buildcon.png"
-import metaverse from "../public/images/metaverse.png"
-import gorco from "../public/images/gorco.png"
-import aidex from "../public/images/aidex.png"
-import sorati from "../public/images/sorati.png"
-import { useState } from "react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Github, ExternalLink } from "lucide-react";
+import { AnimateInView } from "./animate-in-view";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { useLanguage } from "@/lib/language-context";
+import { cn } from "@/lib/utils";
+import scobal from "../public/images/scobal.png";
+import job360 from "../public/images/job360.png";
+import zahran from "../public/images/zahran.png";
+import qahttan from "../public/images/qahttan.png";
+import amjad from "../public/images/amjad.png";
+import buildcon from "../public/images/buildcon.png";
+import metaverse from "../public/images/metaverse.png";
+import gorco from "../public/images/gorco.png";
+import aidex from "../public/images/aidex.png";
+import sorati from "../public/images/sorati.png";
+import { useState } from "react";
 
 const projects = [
-
   {
     id: 2,
     key: "scopal",
     tech: "NEXT 14, TYPESCRIPT, TAILWIND, SHADCN UI, REACT QUERY, OPEN AI",
     image: scobal,
     githubUrl: null,
-    demoUrl: "http://scopal-stage-guousr1hduqx-1298409234.us-east-2.elb.amazonaws.com/",
+    demoUrl:
+      "http://scopal-stage-guousr1hduqx-1298409234.us-east-2.elb.amazonaws.com/",
   },
-{
-  id: 3,
-  key: "sorati",
-  tech: "REACT JS,React Drag and Drop, REACT HOOK FORM, ZOD, FRAMER MOTION.",
-  image: sorati,
-  githubUrl: null,
-  demoUrl: null,
+  {
+    id: 3,
+    key: "sorati",
+    tech: "REACT JS,React Drag and Drop, REACT HOOK FORM, ZOD, FRAMER MOTION.",
+    image: sorati,
+    githubUrl: null,
+    demoUrl: null,
   },
   {
     id: 4,
@@ -111,27 +118,35 @@ const projects = [
     githubUrl: null,
     demoUrl: null,
   },
-]
+];
 
 export function Projects() {
-  const t = useTranslations("projects")
-  const { direction } = useLanguage()
-  const [showAll, setShowAll] = useState(false)
-  const visibleProjects = showAll ? projects : projects.slice(0, 3)
+  const t = useTranslations("projects");
+  const { direction } = useLanguage();
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section id="projects" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <AnimateInView animation="fadeIn">
-          <h2 className={cn("section-title text-center mb-12", direction === "rtl" && "font-arabic")}>
+        <AnimateInView delay={0.0}>
+          <h2
+            className={cn(
+              "section-title text-center mb-12",
+              direction === "rtl" && "font-arabic"
+            )}
+          >
             {t("title")}
           </h2>
         </AnimateInView>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
           {visibleProjects.map((project, index) => (
-            <AnimateInView key={project.id} animation="slideUp" delay={0.1 * index}>
-              <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+            <AnimateInView key={project.id} delay={0.1 * index}>
+              <motion.div
+                whileHover={{ y: -10 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
                 <Card className="bg-secondary border-secondary flex flex-col overflow-hidden h-[500px] hover:cursor-pointer">
                   <CardHeader className="pb-2">
                     <motion.div
@@ -146,31 +161,62 @@ export function Projects() {
                         className="object-cover transition-transform duration-500 hover:scale-110"
                       />
                     </motion.div>
-                    <CardTitle className={cn("font-heading text-xl", direction === "rtl" && "font-arabic")}>
+                    <CardTitle
+                      className={cn(
+                        "font-heading text-xl",
+                        direction === "rtl" && "font-arabic"
+                      )}
+                    >
                       {t(`projects.${project.key}.title`)}
                     </CardTitle>
-                    <CardDescription className={cn("text-xs text-muted-foreground", direction === "rtl" && "font-arabic")}>
+                    <CardDescription
+                      className={cn(
+                        "text-xs text-muted-foreground",
+                        direction === "rtl" && "font-arabic"
+                      )}
+                    >
                       {t("tech")}: {project.tech}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <p className={cn("text-sm text-muted-foreground", direction === "rtl" && "font-arabic")}>
+                    <p
+                      className={cn(
+                        "text-sm text-muted-foreground",
+                        direction === "rtl" && "font-arabic"
+                      )}
+                    >
                       {t(`projects.${project.key}.description`)}
                     </p>
                   </CardContent>
                   <CardFooter className="flex gap-4">
-                    {project.githubUrl && <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="mr-2 h-4 w-4" />
-                          {t("github")}
-                        </a>
-                      </Button>
-                    </motion.div>}
+                    {project.githubUrl && (
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Button variant="outline" size="sm" asChild>
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Github className="mr-2 h-4 w-4" />
+                            {t("github")}
+                          </a>
+                        </Button>
+                      </motion.div>
+                    )}
                     {project.demoUrl && (
-                      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
                         <Button size="sm" asChild>
-                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="mr-2 h-4 w-4" />
                             {t("demo")}
                           </a>
@@ -197,6 +243,5 @@ export function Projects() {
         )}
       </div>
     </section>
-  )
+  );
 }
-

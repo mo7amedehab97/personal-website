@@ -143,6 +143,10 @@
         "title": "Zahran",
         "description": "A dynamic web application with real-time features and modern UI components for enhanced user experience."
       },
+      "koffiyah": {
+        "title": "Koffiyah",
+        "description": "An online store offering a variety of authentic Palestinian kufiyas, with delivery services and customer support."
+      },
       "qahttan": {
         "title": "Qahttan",
         "description": "A responsive web platform built with React, featuring form validation and smooth animations."

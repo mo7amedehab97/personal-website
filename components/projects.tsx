@@ -26,6 +26,7 @@ import metaverse from "../public/images/metaverse.png";
 import gorco from "../public/images/gorco.png";
 import aidex from "../public/images/aidex.png";
 import sorati from "../public/images/sorati.png";
+import koffiyah from "../public/images/kOFFIYAH.png";
 import { useState } from "react";
 
 const projects = [
@@ -45,6 +46,15 @@ const projects = [
     image: sorati,
     githubUrl: null,
     demoUrl: null,
+  },
+
+  {
+    id: 14321,
+    key: "koffiyah",
+    tech: "NEXT JS, TAILWIND CSS,i18n, VOICE SEARCH,SHADCN UI,LOCAL STORAGE, REACT HOOK FORM, FRAMER MOTION.",
+    image: koffiyah,
+    githubUrl: "https://github.com/mo7amedehab97/kufiya-store",
+    demoUrl: "https://kufiya-store.vercel.app/",
   },
   {
     id: 4,

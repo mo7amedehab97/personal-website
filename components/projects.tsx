@@ -27,17 +27,17 @@ import gorco from "../public/images/gorco.png";
 import aidex from "../public/images/aidex.png";
 import sorati from "../public/images/sorati.png";
 import koffiyah from "../public/images/kOFFIYAH.png";
+import mazaj from "../public/images/MazajResturant.png";
 import { useState } from "react";
 
 const projects = [
   {
-    id: 2,
-    key: "scopal",
-    tech: "NEXT 14, TYPESCRIPT, TAILWIND, SHADCN UI, REACT QUERY, OPEN AI",
-    image: scobal,
-    githubUrl: null,
-    demoUrl:
-      "http://scopal-stage-guousr1hduqx-1298409234.us-east-2.elb.amazonaws.com/",
+    id: 14321,
+    key: "koffiyah",
+    tech: "NEXT JS, TAILWIND CSS,i18n, VOICE SEARCH,SHADCN UI,LOCAL STORAGE, REACT HOOK FORM, FRAMER MOTION.",
+    image: koffiyah,
+    githubUrl: "https://github.com/mo7amedehab97/kufiya-store",
+    demoUrl: "https://kufiya-store.vercel.app/",
   },
   {
     id: 3,
@@ -47,15 +47,24 @@ const projects = [
     githubUrl: null,
     demoUrl: null,
   },
-
   {
-    id: 14321,
-    key: "koffiyah",
-    tech: "NEXT JS, TAILWIND CSS,i18n, VOICE SEARCH,SHADCN UI,LOCAL STORAGE, REACT HOOK FORM, FRAMER MOTION.",
-    image: koffiyah,
-    githubUrl: "https://github.com/mo7amedehab97/kufiya-store",
-    demoUrl: "https://kufiya-store.vercel.app/",
+    id: 11,
+    key: "mazaj",
+    tech: "REACT 19, TYPESCRIPT, TAILWIND CSS, VITE, FRAMER MOTION, REACT ICONS, ESLINT",
+    image: mazaj,
+    githubUrl: "https://github.com/mo7amedehab97/MAZAJ",
+    demoUrl: "https://mazaj-eta.vercel.app/",
   },
+  {
+    id: 2,
+    key: "scopal",
+    tech: "NEXT 14, TYPESCRIPT, TAILWIND, SHADCN UI, REACT QUERY, OPEN AI",
+    image: scobal,
+    githubUrl: null,
+    demoUrl:
+      "http://scopal-stage-guousr1hduqx-1298409234.us-east-2.elb.amazonaws.com/",
+  },
+
   {
     id: 4,
     key: "zahran",
@@ -119,14 +128,6 @@ const projects = [
     image: aidex,
     githubUrl: "https://github.com/mo7amedehab97/Aidex",
     demoUrl: "https://aidex.vercel.app/",
-  },
-  {
-    id: 3,
-    key: "powerlook",
-    tech: "EXPRESS.JS, NEXT.JS, SOCKET.IO, FULL CALENDAR PACKAGE",
-    image: "/placeholder.svg?height=300&width=500",
-    githubUrl: null,
-    demoUrl: null,
   },
 ];
 

@@ -170,6 +170,10 @@
       "aidex": {
         "title": "Aidex Japan",
         "description": "A tourism website featuring Japanese destinations with interactive elements and modern design."
+      },
+      "mazaj": {
+        "title": "Mazaj",
+        "description": "MazaJ is a modern, responsive landing page for restaurants, built with React and TypeScript. It showcases dishes, your story, customer reviews, and contact information in a clean single-page layout."
       }
     }
   },

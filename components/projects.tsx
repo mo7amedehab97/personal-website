@@ -28,9 +28,18 @@ import aidex from "../public/images/aidex.png";
 import sorati from "../public/images/sorati.png";
 import koffiyah from "../public/images/kOFFIYAH.png";
 import mazaj from "../public/images/MazajResturant.png";
+import oliveRoots from "../public/images/oliveRoots.png";
 import { useState } from "react";
 
 const projects = [
+  {
+    id: 14322,
+    key: "oliveRoots",
+    tech: "REACT 19, VITE, TAILWIND CSS, NODE.JS, EXPRESS, MONGODB, PASSPORT.JS (JWT), IMAGEKIT, GEMINI (GOOGLE GENAI)",
+    image: oliveRoots,
+    githubUrl: "https://github.com/mo7amedehab97/Olive-roots",
+    demoUrl: "https://olive-roots.vercel.app/",
+  },
   {
     id: 14321,
     key: "koffiyah",

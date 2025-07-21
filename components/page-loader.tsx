@@ -25,7 +25,7 @@ export function PageLoader() {
     <AnimatePresence>
       {loading && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-primary h-screen overflow-hidden"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-primary w-screen  overflow-hidden h-[110vh]"
           initial={{ opacity: 1, y: -20 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}

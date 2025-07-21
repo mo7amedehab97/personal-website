@@ -147,6 +147,10 @@
         "title": "Koffiyah",
         "description": "An online store offering a variety of authentic Palestinian kufiyas, with delivery services and customer support."
       },
+      "oliveRoots": {
+        "title": "Olive Roots",
+        "description": "A modern, full-stack AI-powered blogging platform built with the MERN stack and TypeScript. It features a beautiful, accessible UI, secure authentication, an advanced admin dashboard, and AI-powered content generation."
+      },
       "qahttan": {
         "title": "Qahttan",
         "description": "A responsive web platform built with React, featuring form validation and smooth animations."
@@ -172,8 +176,8 @@
         "description": "A tourism website featuring Japanese destinations with interactive elements and modern design."
       },
       "mazaj": {
-        "title": "Mazaj",
-        "description": "MazaJ is a modern, responsive landing page for restaurants, built with React and TypeScript. It showcases dishes, your story, customer reviews, and contact information in a clean single-page layout."
+        "title": "Mazaj Restaurant",
+        "description": "A modern and responsive restaurant landing page built with the latest technologies to provide an excellent user experience."
       }
     }
   },

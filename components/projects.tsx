@@ -38,8 +38,8 @@ const projects = [
     key: "esspressoHeaven",
     tech: "NEXT JS 15, TYPESCRIPT, TAILWIND CSS 4, NEXT-INTL, LUCIDE REACT, BALOO BHAIJAN 2 FONT",
     image: esspressoHeaven,
-    githubUrl: "https://github.com/mo7amedehab97/espresso-haven",
-    demoUrl: "https://espresso-haven.vercel.app/",
+    githubUrl: "https://github.com/mo7amedehab97/Esspresso-Haven",
+    demoUrl: "https://esspresso-haven.vercel.app/en",
   },
   {
     id: 14322,

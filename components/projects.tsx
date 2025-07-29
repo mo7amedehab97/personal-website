@@ -29,9 +29,18 @@ import sorati from "../public/images/sorati.png";
 import koffiyah from "../public/images/kOFFIYAH.png";
 import mazaj from "../public/images/MazajResturant.png";
 import oliveRoots from "../public/images/oliveRoots.png";
+import esspressoHeaven from "../public/images/esspresso-heaven.png";
 import { useState } from "react";
 
 const projects = [
+  {
+    id: 14323,
+    key: "esspressoHeaven",
+    tech: "NEXT JS 15, TYPESCRIPT, TAILWIND CSS 4, NEXT-INTL, LUCIDE REACT, BALOO BHAIJAN 2 FONT",
+    image: esspressoHeaven,
+    githubUrl: "https://github.com/mo7amedehab97/espresso-haven",
+    demoUrl: "https://espresso-haven.vercel.app/",
+  },
   {
     id: 14322,
     key: "oliveRoots",

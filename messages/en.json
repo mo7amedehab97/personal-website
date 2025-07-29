@@ -178,6 +178,10 @@
       "mazaj": {
         "title": "Mazaj Restaurant",
         "description": "A modern and responsive restaurant landing page built with the latest technologies to provide an excellent user experience."
+      },
+      "esspressoHeaven": {
+        "title": "Espresso Haven",
+        "description": "A modern, multilingual specialty coffee shop website built with Next.js 15, featuring a beautiful UI, internationalization support, and a complete coffee shop experience."
       }
     }
   },

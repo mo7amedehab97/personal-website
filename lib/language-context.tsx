@@ -28,16 +28,12 @@ export function LanguageProvider({
 
     // Try to get language preference from localStorage
     const savedLanguage = localStorage.getItem("language") as Language
-    if (savedLanguage) {
+    if (savedLanguage && savedLanguage !== initialLocale) {
+      // Only override if there's a saved preference AND it's different from the URL locale
       setLanguageState(savedLanguage)
-    } else {
-      // Check browser language
-      const browserLang = navigator.language.split("-")[0]
-      if (browserLang === "ar") {
-        setLanguageState("ar")
-      }
     }
-  }, [])
+    // Remove the browser language check as it conflicts with URL-based routing
+  }, [initialLocale])
 
   useEffect(() => {
     if (!isClient) return

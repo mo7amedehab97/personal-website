@@ -182,6 +182,10 @@
       "esspressoHeaven": {
         "title": "Espresso Haven",
         "description": "A modern, multilingual specialty coffee shop website built with Next.js 15, featuring a beautiful UI, internationalization support, and a complete coffee shop experience."
+      },
+      "reaya": {
+        "title": "Reaya",
+        "description": "A modern medical appointment booking platform built with advanced technologies, designed to simplify the process of booking appointments with doctors through a simple and user-friendly interface."
       }
     }
   },

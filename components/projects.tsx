@@ -30,9 +30,18 @@ import koffiyah from "../public/images/kOFFIYAH.png";
 import mazaj from "../public/images/MazajResturant.png";
 import oliveRoots from "../public/images/oliveRoots.png";
 import esspressoHeaven from "../public/images/esspresso-heaven.png";
+import reaya from "../public/images/reaya.png";
 import { useState } from "react";
 
 const projects = [
+  {
+    id: 1439453224,
+    key: "reaya",
+    tech: "NEXT JS 14, TYPESCRIPT, TAILWIND CSS, NEXT-INTL, ARABIC RTL SUPPORT, RESPONSIVE DESIGN",
+    image: reaya,
+    githubUrl: 'https://github.com/mo7amedehab97/reaya',
+    demoUrl: "https://reaya-one.vercel.app/",
+  },
   {
     id: 14323,
     key: "esspressoHeaven",

@@ -31,6 +31,7 @@ export function LanguageSwitcher() {
   if (!isMounted) {
     return null
   }
+  console.log('language',language)
 
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

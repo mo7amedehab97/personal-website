@@ -11,7 +11,6 @@ import { useLanguage } from "@/lib/language-context";
 import { LanguageSwitcher } from "./language-switcher";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Link from "next/link";
 
 export function Header() {
   const t = useTranslations("header");

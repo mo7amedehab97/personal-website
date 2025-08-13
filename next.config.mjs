@@ -29,7 +29,6 @@ const nextConfig = {
   },
   // Important: this prevents hydration errors related to time-based formatting
   reactStrictMode: true,
-  swcMinify: true,
 }
 
 if (userConfig) {
